@@ -1,24 +1,20 @@
-var numeroDado = imprimirNumeros (5)
 
-function imprimirNumeros (numero) {
-	
-	for (var i = 0 ; i < numero; i++) {
-	console.log (i)
-}
-return i 
-}
+var listaDeNumeros = [1, 2, 3, 4, 5]
+var duplicados = duplicarNumeros (listaDeNumeros)
 
-console.log (numeroDado)
-
-console.log ('---------------')
-
-var numeroDado2 = imprimirOtrosNumeros (10, 15)
-
-function imprimirOtrosNumeros (numero1, numero2) {
-	for(var i = numero1 ; i < numero2; i++ ) {
-		console.log (i)
+function duplicarNumeros (listaDeNumeros) {
+	var ListaDuplicada = listaDeNumeros.slice(0)
+	return ListaDuplicada
 	}
-	return i
-}
-console.log (numeroDado2)
+console.log (duplicados)
 
+
+
+var resultado = multiplicar (listaDeNumeros)
+function multiplicar (listaDeNumeros) {
+	var multiplicados = listaDeNumeros.reduce((p,c)=>p*c)
+
+	return multiplicados
+}
+
+console.log (resultado)
